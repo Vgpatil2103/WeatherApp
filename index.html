@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WheaterAPI</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="landing" id="landingForm">
+        <p class="m-0">Weather Api</p>
+        <button id="fetch-btn">Fetch Data</button>
+    </form>
+
+    <div class="app flex-column ">
+        <section class="app-row">
+            <div class="row1">
+                <h2 class="m-0">Welcome To The Weather Api</h2>
+                <p class="m-0">Here is your current location</p>
+            </div>
+            <div class="row2 d-flex gap-3" id="row2">
+
+            </div>
+            <div class="maps" id="maps">
+
+            </div>
+        </section>
+        <section class="foot" id="foot">
+            <div class="row1">
+                <h2 class="m-0">Your Weather Data</h2>
+            </div>
+
+        </section>
+    </div>
+    <script src="geolocation.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
